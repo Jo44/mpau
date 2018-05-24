@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lighterblue"
+    tools:context="fr.mpau.activity.SplashActivity">
+
+    <View
+        android:id="@+id/lineOverSplash"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/titleSplash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:drawablePadding="15dp"
+        android:drawableTop="@drawable/logo"
+        android:gravity="center"
+        android:text="@string/main_title"
+        android:textColor="@color/darkerblue"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/loadingCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleSplash"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:indeterminate="true" />
+
+</RelativeLayout>

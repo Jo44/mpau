@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:theme="@style/CustomAlertDialog">
+
+    <TextView
+        android:id="@+id/titleAlert"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/lighterblue"
+        android:gravity="center"
+        android:text="@string/confirmation"
+        android:textColor="@color/lightblack"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/confirm_msg_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/lightergrey" />
+
+        <TextView
+            android:id="@+id/confirm_msg_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/orange" />
+
+        <TextView
+            android:id="@+id/confirm_msg_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/lightergrey" />
+
+        <TextView
+            android:id="@+id/confirm_msg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/orange" />
+
+        <TextView
+            android:id="@+id/confirm_msg_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/lightergrey" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.ButtonBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/alertBtnYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/button_blue"
+            android:text="@string/yes"
+            android:textColor="@color/lightblack" />
+
+        <Button
+            android:id="@+id/alertBtnNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/button_blue"
+            android:text="@string/no"
+            android:textColor="@color/lightblack" />
+
+    </android.support.v7.widget.ButtonBarLayout>
+
+</LinearLayout>

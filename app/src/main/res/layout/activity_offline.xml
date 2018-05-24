@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lighterblue"
+    tools:context="fr.mpau.activity.OfflineActivity">
+
+    <View
+        android:id="@+id/lineOverOffline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/offline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawableTop="@drawable/offline"
+        android:gravity="center"
+        android:paddingBottom="40dp"
+        android:text="@string/offline"
+        android:textColor="@color/darkblue"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.ButtonBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnRetry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/button_blue"
+            android:minHeight="30dp"
+            android:text="@string/retry"
+            android:textColor="@color/lightblack" />
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/button_blue"
+            android:minHeight="30dp"
+            android:text="@string/close"
+            android:textColor="@color/lightblack" />
+
+    </android.support.v7.widget.ButtonBarLayout>
+
+</RelativeLayout>

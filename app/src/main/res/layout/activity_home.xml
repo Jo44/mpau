@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lighterblue"
+    tools:context="fr.mpau.activity.HomeActivity">
+
+    <View
+        android:id="@+id/lineOverUserBloc"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/black" />
+
+    <RelativeLayout
+        android:id="@+id/blocUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineOverUserBloc"
+        android:background="@color/darkblue"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/logoHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:contentDescription="@string/mini_logo"
+            android:src="@drawable/logo_mini" />
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/logoHome"
+            android:shadowColor="@color/black"
+            android:shadowDx="1.2"
+            android:shadowDy="1.2"
+            android:shadowRadius="1.2"
+            android:textColor="@color/orange"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnDisconnection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_blue"
+            android:minHeight="25dp"
+            android:text="@string/disconnection"
+            android:textColor="@color/lightblack"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/lineUnderUserBloc"
+        android:layout_width="match_parent"
+        android:layout_height="2sp"
+        android:layout_below="@id/blocUser"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/blocHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineUnderUserBloc"
+        android:layout_margin="30dp"
+        android:background="@layout/main_container"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/titleTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:shadowColor="@color/black"
+            android:shadowDx="1.2"
+            android:shadowDy="1.2"
+            android:shadowRadius="1.2"
+            android:text="@string/timer"
+            android:textColor="@color/orange"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/statusTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:paddingTop="5dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="1.2"
+            android:shadowDy="1.2"
+            android:shadowRadius="1.2"
+            android:text=""
+            android:textColor="@color/orange"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.ButtonBarLayout
+            android:id="@+id/blocTimerDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="30dp">
+
+            <Button
+                android:id="@+id/timerDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/button_blue"
+                android:minHeight="40dp"
+                android:text="@string/date"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/timerTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/button_blue"
+                android:minHeight="40dp"
+                android:text="@string/time"
+                android:textColor="@color/black" />
+
+        </android.support.v7.widget.ButtonBarLayout>
+
+        <LinearLayout
+            android:id="@+id/blocTimerCmd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.ButtonBarLayout
+                android:id="@+id/blocStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp">
+
+                <Button
+                    android:id="@+id/blocStartBtnStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_orange"
+                    android:minHeight="40dp"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    android:text="@string/start_timer"
+                    android:textColor="@color/black" />
+
+            </android.support.v7.widget.ButtonBarLayout>
+
+            <android.support.v7.widget.ButtonBarLayout
+                android:id="@+id/blocPause"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp">
+
+                <Button
+                    android:id="@+id/blocPauseBtnPause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/button_orange"
+                    android:minHeight="40dp"
+                    android:text="@string/pause_timer"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/blocPauseBtnFinish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/button_orange"
+                    android:minHeight="40dp"
+                    android:text="@string/finish_timer"
+                    android:textColor="@color/black" />
+
+            </android.support.v7.widget.ButtonBarLayout>
+
+            <android.support.v7.widget.ButtonBarLayout
+                android:id="@+id/blocRestart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp">
+
+                <Button
+                    android:id="@+id/blocRestartBtnRestart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/button_orange"
+                    android:minHeight="40dp"
+                    android:text="@string/restart_timer"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/blocRestartBtnFinish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/button_orange"
+                    android:minHeight="40dp"
+                    android:text="@string/finish_timer"
+                    android:textColor="@color/black" />
+
+            </android.support.v7.widget.ButtonBarLayout>
+
+            <RelativeLayout
+                android:id="@+id/blocError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:text="@string/unknown_mode"
+                    android:textColor="@color/lightergrey" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.ButtonBarLayout
+            android:id="@+id/blocViewTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnViewTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="150dp"
+                android:background="@drawable/button_blue"
+                android:minHeight="40dp"
+                android:padding="10dp"
+                android:text="@string/view_timer"
+                android:textColor="@color/black" />
+
+        </android.support.v7.widget.ButtonBarLayout>
+
+        <View
+            android:id="@+id/lineOverInter"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/titleInterventions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:shadowColor="@color/black"
+            android:shadowDx="1.2"
+            android:shadowDy="1.2"
+            android:shadowRadius="1.2"
+            android:text="@string/interventions"
+            android:textColor="@color/orange"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.ButtonBarLayout
+            android:id="@+id/blocViewInter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnViewInter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="150dp"
+                android:background="@drawable/button_blue"
+                android:minHeight="40dp"
+                android:padding="10dp"
+                android:text="@string/view_intervention"
+                android:textColor="@color/black" />
+
+        </android.support.v7.widget.ButtonBarLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

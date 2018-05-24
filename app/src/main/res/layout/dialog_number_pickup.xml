@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titleAlert"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/lighterblue"
+        android:gravity="center"
+        android:text="@string/complete_duration"
+        android:textColor="@color/lightblack"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/alertBtn15"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/button_blue"
+            android:minHeight="30dp"
+            android:text="@string/fifteen"
+            android:textColor="@color/lightblack" />
+
+        <Button
+            android:id="@+id/alertBtn30"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/button_blue"
+            android:minHeight="30dp"
+            android:text="@string/thirty"
+            android:textColor="@color/lightblack" />
+
+        <Button
+            android:id="@+id/alertBtn45"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/button_blue"
+            android:minHeight="30dp"
+            android:text="@string/forty_five"
+            android:textColor="@color/lightblack" />
+
+        <Button
+            android:id="@+id/alertBtn60"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/button_blue"
+            android:minHeight="30dp"
+            android:text="@string/sixty"
+            android:textColor="@color/lightblack" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/durationText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:hint="@string/three_pts"
+        android:inputType="number"
+        android:textColor="@color/lightergrey"
+        android:textColorHint="@color/lightergrey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/alertBtnValid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/button_blue"
+            android:minHeight="40dp"
+            android:text="@string/valid"
+            android:textColor="@color/lightblack" />
+
+        <Button
+            android:id="@+id/alertBtnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/button_blue"
+            android:minHeight="40dp"
+            android:text="@string/cancel"
+            android:textColor="@color/lightblack" />
+
+    </LinearLayout>
+
+</LinearLayout>
