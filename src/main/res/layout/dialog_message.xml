@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/darkblue"
+    android:orientation="vertical"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/titleAlert"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/lighterblue"
+        android:gravity="center"
+        android:text="@string/confirmation"
+        android:textColor="@color/lightergrey"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/confirm_msg_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/lightergrey" />
+
+        <TextView
+            android:id="@+id/confirm_msg_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/orange" />
+
+        <TextView
+            android:id="@+id/confirm_msg_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/lightergrey" />
+
+        <TextView
+            android:id="@+id/confirm_msg_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/orange" />
+
+        <TextView
+            android:id="@+id/confirm_msg_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/lightergrey" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/alertBtnYes"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:width="100dp"
+            android:minHeight="48dp"
+            android:text="@string/yes"
+            android:textColor="@color/lightergrey" />
+
+        <Button
+            android:id="@+id/alertBtnNo"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:width="100dp"
+            android:minHeight="48dp"
+            android:text="@string/no"
+            android:textColor="@color/lightergrey" />
+
+    </LinearLayout>
+
+</LinearLayout>

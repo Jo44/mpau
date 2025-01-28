@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Custom Panel -->
+    <style name="CustomPanel">
+        <item name="android:background">@drawable/panel_background</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+    <!-- Custom List View -->
+    <style name="CustomListView">
+        <item name="android:background">@drawable/panel_background</item>
+    </style>
+    <!-- Custom Button -->
+    <style name="CustomButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/blue</item>
+        <item name="android:textColor">@color/lightergrey</item>
+        <item name="strokeColor">@color/black</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cornerRadius">5dp</item>
+    </style>
+    <!-- Custom Checkbox -->
+    <style name="CustomCheckbox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="buttonTint">@color/orange</item>
+    </style>
+    <!-- Custom Radio Button -->
+    <style name="CustomRadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="buttonTint">@color/orange</item>
+    </style>
+</resources>

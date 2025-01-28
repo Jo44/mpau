@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0">
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- Application -->
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher_mpau"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_mpau_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/MPAU">
+        <!-- Activity Splash -->
+        <activity
+            android:name=".activity.SplashActivity"
+            android:exported="true"
+            android:noHistory="true"
+            android:theme="@style/MPAU">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Activity Offline -->
+        <activity
+            android:name=".activity.OfflineActivity"
+            android:label="@string/title_offline_activity"
+            android:theme="@style/MPAU" />
+        <!-- Activity Login -->
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/title_login_activity"
+            android:theme="@style/MPAU" />
+        <!-- Activity Home -->
+        <activity
+            android:name=".activity.HomeActivity"
+            android:label="@string/title_home_activity"
+            android:theme="@style/MPAU" />
+        <!-- Activity View Timers -->
+        <activity
+            android:name=".activity.ViewTimersActivity"
+            android:label="@string/title_view_timers_activity"
+            android:theme="@style/MPAU" />
+        <!-- Activity View Interventions -->
+        <activity
+            android:name=".activity.ViewInterventionsActivity"
+            android:label="@string/title_view_interventions_activity"
+            android:theme="@style/MPAU" />
+        <!-- Activity Add Intervention -->
+        <activity
+            android:name=".activity.AddInterventionActivity"
+            android:label="@string/title_add_intervention_activity"
+            android:theme="@style/MPAU" />
+        <!-- Activity Modif Intervention -->
+        <activity
+            android:name=".activity.ModifInterventionActivity"
+            android:label="@string/title_modif_intervention_activity"
+            android:theme="@style/MPAU" />
+    </application>
+</manifest>

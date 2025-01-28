@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/darkblue"
+    android:orientation="vertical"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/titleAlert"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/lighterblue"
+        android:gravity="center"
+        android:text="@string/complete_duration"
+        android:textColor="@color/lightergrey"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/alertBtn15"
+            style="@style/CustomButton"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:minHeight="48dp"
+            android:text="@string/fifteen"
+            android:textColor="@color/lightergrey" />
+
+        <Button
+            android:id="@+id/alertBtn30"
+            style="@style/CustomButton"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:minHeight="48dp"
+            android:text="@string/thirty"
+            android:textColor="@color/lightergrey" />
+
+        <Button
+            android:id="@+id/alertBtn45"
+            style="@style/CustomButton"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:minHeight="48dp"
+            android:text="@string/forty_five"
+            android:textColor="@color/lightergrey" />
+
+        <Button
+            android:id="@+id/alertBtn60"
+            style="@style/CustomButton"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:minHeight="48dp"
+            android:text="@string/sixty"
+            android:textColor="@color/lightergrey" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/durationText"
+        android:layout_width="150dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="20dp"
+        android:autofillHints="duration"
+        android:background="@drawable/field_background"
+        android:gravity="center"
+        android:hint="@string/three_pts"
+        android:inputType="number"
+        android:textColor="@color/lightergrey"
+        android:textColorHint="@color/lightergrey"
+        android:textCursorDrawable="@drawable/cursor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/alertBtnValid"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:width="100dp"
+            android:minHeight="48dp"
+            android:text="@string/valid"
+            android:textColor="@color/lightergrey" />
+
+        <Button
+            android:id="@+id/alertBtnCancel"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:width="100dp"
+            android:minHeight="48dp"
+            android:text="@string/cancel"
+            android:textColor="@color/lightergrey" />
+
+    </LinearLayout>
+
+</LinearLayout>

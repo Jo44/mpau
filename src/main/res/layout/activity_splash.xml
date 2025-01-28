@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    tools:context="fr.mpau.activity.SplashActivity">
+
+    <View
+        android:id="@+id/lineOverSplash"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/splash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:drawablePadding="15dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/lightergrey"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:drawableTopCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splash"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/main_title"
+        android:textColor="@color/lightergrey"
+        android:textSize="20sp" />
+
+    <ProgressBar
+        android:id="@+id/loadingCircle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/orange" />
+
+</RelativeLayout>

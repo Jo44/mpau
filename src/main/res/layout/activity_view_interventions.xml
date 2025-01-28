@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    tools:context="fr.mpau.activity.ViewInterventionsActivity">
+
+    <View
+        android:id="@+id/lineOverControlsBloc"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/black" />
+
+    <RelativeLayout
+        android:id="@+id/controlsBloc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineOverControlsBloc"
+        android:background="@color/darkblue"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <ImageButton
+            android:id="@+id/backArrowView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/darkblue"
+            android:contentDescription="@string/back_arrow"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@drawable/button_arrow_left" />
+
+        <TextView
+            android:id="@+id/txtAddInter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/backArrowView"
+            android:shadowColor="@color/black"
+            android:shadowDx="1.2"
+            android:shadowDy="1.2"
+            android:shadowRadius="1.2"
+            android:text="@string/view_interventions_title"
+            android:textColor="@color/orange"
+            android:textStyle="bold"
+            tools:ignore="RelativeOverlap" />
+
+        <ImageButton
+            android:id="@+id/addInterView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/optionsView"
+            android:background="@color/darkblue"
+            android:contentDescription="@string/add"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@drawable/add" />
+
+        <ImageButton
+            android:id="@+id/optionsView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/informationsView"
+            android:background="@color/darkblue"
+            android:contentDescription="@string/options"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@drawable/options" />
+
+        <ImageButton
+            android:id="@id/informationsView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@color/darkblue"
+            android:contentDescription="@string/informations"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@drawable/informations" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/lineUnderControlsBloc"
+        android:layout_width="match_parent"
+        android:layout_height="2sp"
+        android:layout_below="@id/controlsBloc"
+        android:background="@color/black"
+        tools:ignore="SmallSp" />
+
+    <LinearLayout
+        android:id="@+id/blocEmpty"
+        style="@style/CustomListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineUnderControlsBloc"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textViewEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="@string/no_saved_intervention" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/blocViewInters"
+        style="@style/CustomListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/blocPagination"
+        android:layout_below="@id/lineUnderControlsBloc"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"
+        android:paddingVertical="10dp">
+
+        <ListView
+            android:id="@+id/listViewInter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/divider"
+            android:dividerHeight="1dp"
+            android:drawSelectorOnTop="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/blocPagination"
+        style="@style/CustomPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/previousArrowPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="100dp"
+            android:layout_toStartOf="@id/paginationText"
+            android:background="@color/darkblue"
+            android:contentDescription="@string/previous_arrow"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@drawable/button_arrow_left" />
+
+        <TextView
+            android:id="@+id/paginationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/orange"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/nextArrowPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_toEndOf="@id/paginationText"
+            android:background="@color/darkblue"
+            android:contentDescription="@string/next_arrow"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@drawable/button_arrow_right" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

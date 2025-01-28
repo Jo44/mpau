@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    tools:context="fr.mpau.activity.LoginActivity">
+
+    <View
+        android:id="@+id/lineOverLogin"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/black" />
+
+    <RelativeLayout
+        style="@style/CustomPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints="username"
+                android:background="@drawable/field_background"
+                android:gravity="center"
+                android:hint="@string/username"
+                android:inputType="text"
+                android:minWidth="200dp"
+                android:minHeight="48dp"
+                android:textColor="@color/lightergrey"
+                android:textColorHint="@color/lightergrey"
+                android:textCursorDrawable="@drawable/cursor" />
+
+            <EditText
+                android:id="@+id/userPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:autofillHints="userpass"
+                android:background="@drawable/field_background"
+                android:gravity="center"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:minWidth="200dp"
+                android:minHeight="48dp"
+                android:textColor="@color/lightergrey"
+                android:textColorHint="@color/lightergrey"
+                android:textCursorDrawable="@drawable/cursor" />
+
+            <Button
+                android:id="@+id/btnConnection"
+                style="@style/CustomButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:minWidth="200dp"
+                android:minHeight="60dp"
+                android:text="@string/connection"
+                android:textColor="@color/orange"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

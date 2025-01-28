@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    tools:context="fr.mpau.activity.AddInterventionActivity">
+
+    <View
+        android:id="@+id/lineOverControlsBloc"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/black" />
+
+    <View
+        android:id="@+id/interAnchor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/lineOverControlsBloc"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:id="@+id/controlsBloc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/interAnchor"
+        android:background="@color/darkblue"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <ImageButton
+            android:id="@+id/backArrowAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/darkblue"
+            android:contentDescription="@string/back_arrow"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@drawable/button_arrow_left" />
+
+        <TextView
+            android:id="@+id/txtAddInter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/backArrowAdd"
+            android:shadowColor="@color/black"
+            android:shadowDx="1.2"
+            android:shadowDy="1.2"
+            android:shadowRadius="1.2"
+            android:text="@string/add_intervention_title"
+            android:textColor="@color/orange"
+            android:textStyle="bold"
+            tools:ignore="RelativeOverlap" />
+
+        <ImageButton
+            android:id="@+id/btnSaveInter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@color/darkblue"
+            android:contentDescription="@string/save"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@drawable/save" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/lineUnderControlsBloc"
+        android:layout_width="match_parent"
+        android:layout_height="2sp"
+        android:layout_below="@id/controlsBloc"
+        android:background="@color/black"
+        tools:ignore="SmallSp" />
+
+    <LinearLayout
+        android:id="@+id/blocInter"
+        style="@style/CustomPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lineUnderControlsBloc"
+        android:layout_margin="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingVertical="25dp">
+
+        <LinearLayout
+            android:id="@+id/blocAddInterDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <Button
+                android:id="@+id/addInterDate"
+                style="@style/CustomButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:width="150dp"
+                android:height="60dp"
+                android:text="@string/date" />
+
+            <Button
+                android:id="@+id/addInterTime"
+                style="@style/CustomButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:width="150dp"
+                android:height="60dp"
+                android:text="@string/time" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/blocAddInterDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <Button
+                android:id="@+id/addInterDuration"
+                style="@style/CustomButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="150dp"
+                android:height="60dp"
+                android:text="@string/duration" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/blocTypeAgeInter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp">
+
+            <LinearLayout
+                android:id="@+id/blocTypeInter"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/type_inter" />
+
+                <Spinner
+                    android:id="@+id/listType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/field_background"
+                    android:gravity="center"
+                    android:minWidth="100dp"
+                    android:minHeight="48dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blocAgeInter"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/patient_age" />
+
+                <Spinner
+                    android:id="@+id/listPatientAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/field_background"
+                    android:gravity="center"
+                    android:minWidth="100dp"
+                    android:minHeight="48dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/blocSubTypeSmurInter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp">
+
+            <LinearLayout
+                android:id="@+id/blocSubTypeInter"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/subtype_inter" />
+
+                <Spinner
+                    android:id="@+id/listSubType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/field_background"
+                    android:gravity="center"
+                    android:minWidth="180dp"
+                    android:minHeight="48dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blocSmurInter"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:labelFor="@id/checkSmur"
+                    android:text="@string/smur" />
+
+                <CheckBox
+                    android:id="@+id/checkSmur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/blocSectorInter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="20dp">
+
+            <EditText
+                android:id="@+id/sector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:width="240dp"
+                android:autofillHints="sector"
+                android:background="@drawable/field_background"
+                android:gravity="center"
+                android:hint="@string/sector"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textColor="@color/lightergrey"
+                android:textColorHint="@color/lightergrey"
+                android:textCursorDrawable="@drawable/cursor" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:width="600dp"
+            android:autofillHints="comment"
+            android:background="@drawable/field_background"
+            android:gravity="top|start"
+            android:hint="@string/comment"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:scrollbars="vertical"
+            android:textColor="@color/lightergrey"
+            android:textColorHint="@color/lightergrey"
+            android:textCursorDrawable="@drawable/cursor" />
+
+    </LinearLayout>
+
+</RelativeLayout>

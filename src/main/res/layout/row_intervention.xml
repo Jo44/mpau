@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="10dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/mainTypeInter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/orange"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/subTypeInter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/mainTypeInter"
+        android:layout_toEndOf="@id/mainTypeInter"
+        android:textColor="@color/lightergrey"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/smurInter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/mainTypeInter"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@id/subTypeInter"
+        android:textColor="@color/orange"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/agePatientInter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainTypeInter"
+        android:layout_marginStart="25dp"
+        android:textColor="@color/lightergrey"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/sectorInter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/agePatientInter"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@id/agePatientInter"
+        android:textColor="@color/lightergrey"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/commentInter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/agePatientInter"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/lightergrey"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/datetimeInter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/commentInter"
+        android:layout_marginStart="25dp"
+        android:textColor="@color/lightergrey"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/durationInter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/datetimeInter"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@id/datetimeInter"
+        android:textColor="@color/lightergrey"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>

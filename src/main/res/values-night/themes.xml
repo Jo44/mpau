@@ -1,0 +1,18 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="MPAU" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:textColor">@color/lightergrey</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="buttonStyle">@style/Widget.AppCompat.Button</item>
+        <item name="checkboxStyle">@style/CustomCheckbox</item>
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="colorAccent">@color/lightblue</item>
+        <item name="colorControlNormal">@color/lightergrey</item>
+        <item name="colorControlActivated">@color/lightblue</item>
+        <item name="colorControlHighlight">@color/lightblue</item>
+        <item name="radioButtonStyle">@style/CustomRadioButton</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+</resources>

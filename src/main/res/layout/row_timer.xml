@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="10dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/timerDayTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:text="@string/day"
+        android:textColor="@color/lightergrey"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/timerDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/timerDayTitle"
+        android:textColor="@color/orange"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/timerTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/orange"
+        tools:ignore="RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/timerDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timerDay"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/lightergrey" />
+
+</RelativeLayout>

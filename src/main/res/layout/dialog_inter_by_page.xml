@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/darkblue"
+    android:orientation="vertical"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/titleAlert"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/lighterblue"
+        android:gravity="center"
+        android:text="@string/inter_by_page"
+        android:textColor="@color/lightergrey"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/messageInformationsTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxWidth="300dp"
+            android:text="@string/message_inter_by_page"
+            android:textColor="@color/lightergrey" />
+
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:id="@+id/radio_nb_inter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:checkedButton="@+id/radio_nb_inter_10"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@id/radio_nb_inter_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="10dp"
+            android:width="60dp"
+            android:text="@string/ten"
+            android:textColor="@color/lightergrey" />
+
+        <RadioButton
+            android:id="@+id/radio_nb_inter_25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="10dp"
+            android:width="60dp"
+            android:text="@string/twenty_five"
+            android:textColor="@color/lightergrey" />
+
+        <RadioButton
+            android:id="@+id/radio_nb_inter_50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="10dp"
+            android:width="60dp"
+            android:text="@string/fifty"
+            android:textColor="@color/lightergrey" />
+
+        <RadioButton
+            android:id="@+id/radio_nb_inter_100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="10dp"
+            android:width="60dp"
+            android:text="@string/hundred"
+            android:textColor="@color/lightergrey" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/alertBtnValid"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:width="100dp"
+            android:minHeight="48dp"
+            android:text="@string/valid"
+            android:textColor="@color/lightergrey" />
+
+        <Button
+            android:id="@+id/alertBtnCancel"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:width="100dp"
+            android:minHeight="48dp"
+            android:text="@string/cancel"
+            android:textColor="@color/lightergrey" />
+
+    </LinearLayout>
+
+</LinearLayout>

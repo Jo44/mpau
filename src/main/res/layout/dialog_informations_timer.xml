@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/darkblue"
+    android:orientation="vertical"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:id="@+id/titleAlert"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/lighterblue"
+        android:gravity="center"
+        android:text="@string/informations"
+        android:textColor="@color/lightergrey"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp">
+
+        <TextView
+            android:id="@+id/messageInformationsTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:text="@string/message_informations_timer"
+            android:textColor="@color/lightergrey" />
+
+        <TextView
+            android:id="@+id/textMonthTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/message_informations_timer_month"
+            android:textColor="@color/lightergrey"
+            app:drawableStartCompat="@drawable/month" />
+
+        <TextView
+            android:id="@+id/textTouchTimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:layout_marginStart="10dp"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/message_informations_timer_touch"
+            android:textColor="@color/lightergrey"
+            app:drawableStartCompat="@drawable/touch" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/alertBtnOk"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="100dp"
+            android:minHeight="48dp"
+            android:text="@string/ok"
+            android:textColor="@color/lightergrey" />
+
+    </RelativeLayout>
+
+</LinearLayout>
